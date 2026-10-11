@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#211f1a">
+  <meta name="description" content="Rahul and Kiran's temple wedding invitation">
+  <title>Rahul &amp; Kiran — Where Forever Begins</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="film-loader" id="filmLoader" role="status" aria-live="polite" aria-busy="true">
+    <p id="loaderLabel">Preparing your temple journey…</p>
+    <div class="loader-track" aria-hidden="true"><span id="loaderFill"></span></div>
+    <p id="loaderPct">0%</p>
+  </div>
+  <a class="skip-link" href="#details">Skip the film to wedding details</a>
+  <main>
+    <section class="journey" id="journey" aria-label="A temple journey to Rahul and Kiran's wedding">
+      <div class="journey-stage">
+        <canvas id="journeyCanvas" role="img" aria-label="A moving journey through Rameswaram temple architecture"></canvas>
+        <div class="film-shade" aria-hidden="true"></div>
+        <header class="site-header"><span>A temple wedding</span><button type="button" class="header-link" data-open-details>The celebrations <b>↗</b></button></header>
+        <section class="copy-region" aria-live="polite">
+          <article class="chapter is-active" data-start="0" data-name="The beginning">
+            <p class="eyebrow">With full hearts &amp; our families’ blessings</p>
+            <h1><span>Tejas </span><em>&amp;</em><span> Vaishnavi</span></h1>
+            <p class="copy-note">A love to come home to.<br>A beginning to share with you.</p>
+            <p class="hero-date">18 December <span>Wedding &amp; reception</span></p>
+          </article>
+          <article class="chapter" data-start=".16" data-name="The blessing" aria-hidden="true">
+            <p class="eyebrow">In the quiet, we found our answer</p>
+            <h2>Some journeys<br><em>feel like prayer.</em></h2>
+            <p class="copy-note">With grateful hearts and our elders’ blessings,<br>we take our first steps towards forever.</p>
+          </article>
+          <article class="chapter" data-start=".33" data-name="The light" aria-hidden="true">
+            <p class="eyebrow">A little light. A lifetime of love.</p>
+            <h2>Every ordinary day.<br><em>With you.</em></h2>
+            <p class="copy-note">The morning chai. The long way home.<br>Small things that became our everything.</p>
+          </article>
+          <article class="chapter" data-start=".5" data-name="The gathering" aria-hidden="true">
+            <p class="eyebrow">One day, a thousand memories</p>
+            <h2>A celebration<br><em>to come home to.</em></h2>
+            <div class="film-events"><p><span>18 Dec</span> Wedding ceremony</p><p><span>Afterwards</span> Reception with love</p></div>
+          </article>
+          <article class="chapter" data-start=".68" data-name="The horizon" aria-hidden="true">
+            <p class="eyebrow">Where tradition meets our story</p>
+            <h2>A sacred place.<br><em>A new beginning.</em></h2>
+            <p class="copy-note">The temple before us. Our loved ones beside us.<br>Nowhere else we’d rather be.</p>
+          </article>
+          <article class="chapter" data-start=".84" data-name="The promise" aria-hidden="true">
+            <p class="eyebrow">And a place for you in it all</p>
+            <h2>Our forever.<br><em>Your presence.</em></h2>
+            <p class="copy-note">It would not be the same without you.</p>
+            <button class="rsvp-button" type="button" data-open-rsvp>Join our celebration <span>↗</span></button>
+            <button class="text-link" type="button" data-open-details>The wedding details <span>↓</span></button>
+          </article>
+        </section>
+        <nav class="chapter-nav" aria-label="Film chapters">
+          <button type="button" data-chapter="0" aria-label="The beginning" aria-current="step"><span>01</span><i></i></button>
+          <button type="button" data-chapter="1" aria-label="The blessing"><span>02</span><i></i></button>
+          <button type="button" data-chapter="2" aria-label="The light"><span>03</span><i></i></button>
+          <button type="button" data-chapter="3" aria-label="The gathering"><span>04</span><i></i></button>
+          <button type="button" data-chapter="4" aria-label="The horizon"><span>05</span><i></i></button>
+          <button type="button" data-chapter="5" aria-label="The promise"><span>06</span><i></i></button>
+        </nav>
+        <footer class="journey-footer"><span class="chapter-caption"><b id="chapterNumber">01</b><span id="chapterName">The beginning</span></span><button class="scroll-cue" id="nextChapter" type="button">Scroll to unfold <span>↓</span></button></footer>
+        <div class="progress" aria-hidden="true"><span id="progressFill"></span></div>
+      </div>
+    </section>
+  </main>
+  <dialog id="details" aria-labelledby="detailsTitle">
+    <button type="button" class="dialog-close" data-close-details aria-label="Close wedding details">×</button>
+    <p class="small-label">Tejas &amp; Vaishnavi · 18 December</p>
+    <h2 id="detailsTitle">A celebration <em>with you.</em></h2>
+    <p class="details-intro">With the love and blessings of our families, join us as we begin our forever.</p>
+    <article class="event"><span>01 /</span><div><p class="small-label">1 December</p><h3>Wedding ceremony</h3><p>Time &amp; venue to be shared</p></div></article>
+    <article class="event"><span>02 /</span><div><p class="small-label">Following the wedding</p><h3>Reception</h3><p>Time &amp; venue to be shared</p></div></article>
+    <p class="venue-note">Final venue details to follow · Kindly RSVP when you can</p>
+    <a class="text-link" id="saveDate" download="Rahul-and-Kiran-wedding.ics">Save the date ↗</a>
+    <button class="rsvp-button" type="button" data-open-rsvp>Share your RSVP ↗</button>
+  </dialog>
+  <dialog id="rsvpDialog" aria-labelledby="rsvpTitle">
+    <button type="button" class="dialog-close" data-close-rsvp aria-label="Close RSVP">×</button>
+    <p class="small-label">Rahul &amp; Kiran</p>
+    <h2 id="rsvpTitle">A place <em>for you.</em></h2>
+    <p class="demo-note">Your reply is saved only on this device until the couple adds their RSVP contact.</p>
+    <form id="rsvpForm"><label>Your name<input name="name" autocomplete="name" required maxlength="100" placeholder="Your full name"></label><label>Will you join us?<select name="attendance"><option value="yes">Joyfully accept</option><option value="no">Sending love from afar</option></select></label><label id="guestField">Number of guests<select name="guests"><option value="1">1 guest</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option></select></label><label>A little note<textarea name="message" rows="3" maxlength="500" placeholder="A blessing or anything you’d like us to know"></textarea></label><button class="rsvp-button" type="submit">Save my reply <span>↗</span></button><p id="rsvpStatus" role="status"></p></form>
+  </dialog>
+  <script src="./script.js"></script>
+</body>
+</html>
